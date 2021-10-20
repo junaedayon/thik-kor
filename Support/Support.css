@@ -1,0 +1,87 @@
+.single-box{
+    box-sizing: border-box;
+    width: 325px;
+    height: 300px;
+    background-color: whitesmoke;
+    /* border: 1px solid grey ; */
+
+    border-radius: 10px;
+    transition: 0.5 all ease-in;
+}
+.contents{
+    width: 100%;
+    height: 100%;
+    padding: 30px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.single-box:hover{
+    background-color:#524552 ;
+    cursor: pointer;
+
+   
+}
+.single-box:hover .icons{
+    color: #ff552d;
+}
+.single-box:hover .paras {
+    color: white;
+
+}
+.single-box:hover .contents > h3 {
+    color: white;
+}
+
+.contents > h3{
+    font-size: 22px;
+    margin: 15px 0px;
+
+
+}
+.paras{
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0px;
+}
+.link{
+    text-decoration: none;
+    color: #ff552d;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.link:hover{
+    color: #ff552d;
+    font-size: 20px;
+}
+.icons{
+    font-size: 50px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #ff552d !important;
+}
+
+
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '.';
+    text-align: center;
+    opacity: .25;
+    color: #ff552d !important;
+}
